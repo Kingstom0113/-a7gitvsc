@@ -1,0 +1,284 @@
+@media (max-width: 768px) {
+    body {
+        margin-top: 23px;
+        text-align: justify;
+        background-image: url(/Material/img/fondo.jpg);
+    }
+
+    header {
+        background-color: #223a5e;
+        border-bottom: solid gray 5px;
+        text-align: center;
+        font-size: 1.8em;
+        font-variant: small-caps;
+        font-weight: bold;
+        color: white;
+        height: 70px;
+        grid-area: header;
+    }
+
+    h2 {
+        color: brown;
+        border-bottom: brown solid 1px;
+    }
+
+    h3 {
+        color: brown;
+        font-style: italic;
+    }
+
+    h4 {
+        text-align: center;
+
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: #f6d155;
+        text-decoration: underline;
+    }
+
+    span {
+        font-size: 1.5em;
+    }
+
+    .aside {
+        grid-area: aside;
+        background-color: #223a5e;
+        color: white;
+        margin-top: 2em;
+        padding: 0.3em;
+        text-align: left;
+    }
+
+    table {
+        border: none;
+        border-collapse: collapse;
+        margin: auto;
+        border-spacing: 10px;
+    }
+
+    th {
+        background-color: #223a5e;
+        color: white;
+        text-align: center;
+    }
+
+    tr {
+        text-align: center;
+        padding: 10px;
+        height: 40px;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #d49f75;
+    }
+
+    tr:nth-child(even) {
+        background-color: #c48f65;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        border: solid 3px gray;
+    }
+
+    #img3 {
+        display: block;
+        margin: auto;
+        border: solid 3px gray;
+        height: auto;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    figure {
+        margin-top: 2em;
+        margin-left: 5%;
+        size: 20%;
+    }
+
+    figcaption {
+        text-align: center;
+        font-style: oblique;
+        font-size: medium;
+        margin-top: 10px;
+    }
+
+    .bloque {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .main {
+        grid-area: main;
+        margin-left: 5%;
+        margin-right: 15%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        border-top: solid gray 5px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        background-color: #223a5e;
+        color: white;
+        grid-area: footer;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        margin-top: 23px;
+        text-align: justify;
+        background-image: url(/Material/img/fondo.jpg);
+        display: grid;
+        grid-template-columns: 250px, 1fr;
+        grid-template-areas:
+            "header header"
+            "aside main"
+            "footer footer";
+    }
+
+    header {
+        background-color: #223a5e;
+        border-bottom: solid gray 5px;
+        text-align: center;
+        font-size: 1.8em;
+        font-variant: small-caps;
+        font-weight: bold;
+        color: white;
+        height: 70px;
+        grid-area: header;
+    }
+
+    h2 {
+        color: brown;
+        border-bottom: brown solid 1px;
+    }
+
+    h3 {
+        color: brown;
+        font-style: italic;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: #f6d155;
+        text-decoration: underline;
+    }
+
+    span {
+        font-size: 1.5em;
+    }
+
+    .aside {
+        grid-area: aside;
+        background-color: #223a5e;
+        color: white;
+        margin-top: 2em;
+        height: 11em;
+        width: 90%;
+        padding: 0.3em;
+        text-align: left;
+    }
+
+    table {
+        border: none;
+        border-collapse: collapse;
+        margin: auto;
+        border-spacing: 10px;
+    }
+
+    th {
+        background-color: #223a5e;
+        color: white;
+        text-align: center;
+    }
+
+    tr {
+        text-align: center;
+        padding: 10px;
+        height: 40px;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #d49f75;
+    }
+
+    tr:nth-child(even) {
+        background-color: #c48f65;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        border: solid 3px gray;
+    }
+
+    #img3 {
+        display: block;
+        margin: auto;
+        border: solid 3px gray;
+        width: 270px;
+    }
+
+    figure {
+        margin-top: 2em;
+        margin-left: 5%;
+        size: 20%;
+    }
+
+    figcaption {
+        text-align: center;
+        font-style: oblique;
+        font-size: medium;
+        margin-top: 10px;
+    }
+
+    .bloque {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .main {
+        grid-area: main;
+        margin-left: 5%;
+        margin-right: 15%;
+    }
+
+    footer {
+        border-top: solid gray 5px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        background-color: #223a5e;
+        color: white;
+        grid-area: footer;
+    }
+}
